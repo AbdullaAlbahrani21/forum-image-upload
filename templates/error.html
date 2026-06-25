@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.Code}} - {{.Title}}</title>
+    <link rel="icon" href="/static/forumIcon.png" />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body class="error-page">
+    <div class="error-container">
+      <div class="error-code">{{.Code}}</div>
+      <h1 class="error-title">{{.Title}}</h1>
+      <p class="error-message">{{.Message}}</p>
+
+      <div class="error-image">
+        {{if eq .Code 400}}🤔 {{else if eq .Code 403}}🔒 {{else if eq .Code
+        404}}🔍 {{else if eq .Code 405}}🚫 {{else if eq .Code 500}}⚠️ {{else}}❌
+        {{end}}
+      </div>
+
+      <a href="javascript:history.back()" class="home-button">Go Back</a>
+    </div>
+  </body>
+</html>

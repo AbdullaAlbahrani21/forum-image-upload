@@ -1,0 +1,37 @@
+هيكل الموقع
+
+forum/
+│
+├── database/
+│   └── db.go
+│
+├── static/
+│   ├── style.css
+│   └── forumIcon.png
+│
+├── templates/
+│   ├── home.html
+│   ├── login.html
+│   ├── register.html
+│   ├── post.html
+│   ├── profile.html
+│   └── error.html
+├── main.go
+├── routeHandler.go
+├── oauth.go         
+├── go.mod
+├── go.sum
+├──Dockerfile
+├── image_test.go
+└── image.go
+
+
+
+التعديلات:-
+1- ضيف زر profile في صفحه ال post.html  في اعلى الصفحه
+2-واجعل البوست في البروفايل فقط شكل مثل صفحه ال home ف اذا ضغط ال يوزر على البوست ف ينقله الى post.html
+3-يمكنه ان يضيف بوست بدون كتابة شي بشرط انه اما ان يختار صوره او ان يكتب كلام او الاثنان معا,(العنوان لازم بكل الحاللات)
+4-صفحه البروفايل يجب ان يظهر في الصوره بداحل البوست 
+
+
+
